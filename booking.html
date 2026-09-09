@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zad - Discover the beauty of Marrakech, Morocco with our travel guide and booking service.">
+    <meta name="keywords" content="Morocco, Marrakech, travel, tourism, booking, vacation">
+    <title>booking </title>
+    <link rel="icon" type="image/png" href="tr.png">
+    
+</head>
+<body>
+ <header>
+        <center>
+        <nav>
+            
+            <!--information nav-->
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Destinations</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Travel Information</a>&nbsp;&nbsp;&nbsp;
+            <a href="booking.html">Book Now </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>  RIMA TRAVEL</strong><sup><img src="tr.png" width="20" height="20" alt="RIMA Travel">  </sup>
+            
+          
+            
+        </nav>
+        </center>
+       
+         
+    </header>
+
+<main>
+<form action="submit.php" target="_self" autocomplete="on">
+   <div>
+    <fieldset>
+    
+  <legend>Personal Information</legend>
+          <div> <label for="fullname">Full Name:</label>
+           <input type="text" id="fullname" name="fullname" required>
+           <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" required><br><br>
+          </div>
+           <div><label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" required><br><br>
+           </div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+     </fieldset>
+   </div>
+    <fieldset>
+    
+  <legend>Travel Information</legend>
+  <div>
+           <label for="departure">Departure City:</label>
+           <input type="text" id="departure" name="departure" required><br><br>
+
+  </div>
+  <div>
+    <label for="destination">Destination:</label>
+    <select id="destination" name="destination">
+        <optgroup label="Europe">
+        <option value="paris">Paris</option>
+        <option value="rome">Rome</option>
+        </optgroup>
+        <optgroup label="Middle East">
+          <option value="marrakech">Marrakech</option>
+          <option value="dubai">Dubai</option>
+           </optgroup>
+           </select><br><br>
+   </div>
+<div>
+       <label for="traveldate">Travel Date:</label>
+        <input type="date" id="traveldate" name="traveldate"><br><br>
+</div>
+  <div>
+        <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" min="1" max="20" required>
+         </div><br><br>
+         <div>
+      <p>Travel Class:</p>
+           <input type="radio" id="economy" name="travelclass" value="economy">
+            <label for="economy">Economy</label>
+
+             <input type="radio" id="business" name="travelclass" value="business">
+              <label for="business">Business</label>
+
+              <input type="radio" id="first" name="travelclass" value="first">
+                 <label for="first">First Class</label><br><br>
+
+         </div>
+         <div>
+
+            <p>Additional Services:</p>
+             <input type="checkbox" id="transfer" name="services" value="transfer">
+             <label for="transfer">Airport Transfer</label>
+
+          <input type="checkbox" id="hotel" name="services" value="hotel">
+         <label for="hotel">Hotel Reservation</label>
+
+           <input type="checkbox" id="insurance" name="services" value="insurance">
+            <label for="insurance">Travel Insurance</label>
+
+           <input type="checkbox" id="tour" name="services" value="tour">
+           <label for="tour">Guided Tour</label>
+         </div><br><br>
+         <div>
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" placeholder="Any special requirements?" maxlength="600"></textarea>
+         </div><br><br>
+<div>
+
+    <label for="documents">Upload Documents:</label>
+<input type="file" id="documents" name="documents" required multiple><br><br>
+</div>
+<div>
+    <label for="package">Preferred Package:</label>
+<input type="text" id="package" name="package" list="packages">
+<datalist id="packages">
+  <option value="Desert Safari">
+  <option value="City Tour">
+  <option value="Beach Getaway">
+  <option value="Mountain Trek">
+</datalist><br><br>
+
+</div>
+<div>
+    <label for="bookingref">Booking Reference:</label>
+<input type="text" id="bookingref" name="bookingref" value="BR-2026-001" readonly>
+
+<label for="discount">Promotional Discount:</label>
+<input type="text" id="discount" name="discount" value="10% OFF" disabled size="10"><br><br>
+</div>
+    </fieldset><br><br><br><br>
+<div><center>
+   <button type="submit">Submit Booking</button>
+   <button type="reset">Clear Form</button></center>
+</div><br><br><br>
+
+</form>
+</main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+  <center>
+  
+  <small>
+    <a href="">Privacy Policy</a>  
+    <a href="">Contact Us</a>
+  </small>
+    </center>
+  
+</footer>
+</body>
+</html>
